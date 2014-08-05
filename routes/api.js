@@ -90,3 +90,39 @@ exports.sign = function(req, res, next)
   };
   response.json(data).pipe(res);
 };
+
+exports.test = function(req, res, next)
+{
+  var signres;
+  try {
+    if ("string" !== typeof req.body.info) {
+      returnError(res, "missingInfo", "Public information is missing.");
+        return
+    }
+    if ("string" !== typeof req.body.signreq) {
+      returnError(res, "missingSignreq", "Signature request is missing.");
+        return
+    }
+    signres = signer.test(""+req.body.info, ""+req.body.signreq);
+    console.log(signres)
+  } catch (e) {
+    if (e && e.name === "UserError") {
+      returnError(res, "userError", e.message);
+    } else {
+      console.log('---');
+      if (e && e.stack) console.log(e.stack);
+      else console.log("Non-Error value thrown: "+e);
+
+      returnError(res, "internalError", "An internal server error occurred.");
+    }
+    return;
+  }
+  var data = {
+    result: 'success',
+    signres: signres,
+    modulus: config.rsa.n,
+    alpha: config.rsa.a,
+    exponent: config.rsa.e
+  };
+  response.json(data).pipe(res);
+};
