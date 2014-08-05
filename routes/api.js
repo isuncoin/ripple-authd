@@ -1,4 +1,4 @@
-
+var response = require('response')
 var Signer = require('../lib/signer').Signer,
     config = require('../config'),
     url    = require('url');
@@ -11,7 +11,7 @@ function returnError(res, type, message) {
     error: type,
     error_message: message
   };
-  res.send(JSON.stringify(data));
+  response.json(data).status(400).pipe(res)
 }
 
 function doCors(req, res)
@@ -57,17 +57,18 @@ exports.cors = function(req, res, next)
 
 exports.sign = function(req, res, next)
 {
-  doCors(req, res);
-
   var signres;
   try {
     if ("string" !== typeof req.body.info) {
       returnError(res, "missingInfo", "Public information is missing.");
+        return
     }
     if ("string" !== typeof req.body.signreq) {
       returnError(res, "missingSignreq", "Signature request is missing.");
+        return
     }
     signres = signer.sign(""+req.body.info, ""+req.body.signreq);
+    console.log(signres)
   } catch (e) {
     if (e && e.name === "UserError") {
       returnError(res, "userError", e.message);
@@ -87,5 +88,5 @@ exports.sign = function(req, res, next)
     alpha: config.rsa.a,
     exponent: config.rsa.e
   };
-  res.send(JSON.stringify(data));
+  response.json(data).pipe(res);
 };
