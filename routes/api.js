@@ -1,9 +1,11 @@
 var response = require('response')
+var config = require('../config')
+
 var Signer = require('../lib/signer').Signer,
-    config = require('../config'),
     url    = require('url');
 
 var signer = new Signer();
+var testSigner = new Signer(require('../test.rsa.json'))
 
 function returnError(res, type, message) {
   var data = {
@@ -103,7 +105,7 @@ exports.test = function(req, res, next)
       returnError(res, "missingSignreq", "Signature request is missing.");
         return
     }
-    signres = signer.test(""+req.body.info, ""+req.body.signreq);
+    signres = testSigner.test(""+req.body.info, ""+req.body.signreq);
     console.log(signres)
   } catch (e) {
     if (e && e.name === "UserError") {
@@ -120,9 +122,7 @@ exports.test = function(req, res, next)
   var data = {
     result: 'success',
     signres: signres,
-    modulus: config.rsa.n,
-    alpha: config.rsa.a,
-    exponent: config.rsa.e
+    test:true
   };
   response.json(data).pipe(res);
 };

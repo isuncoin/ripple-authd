@@ -55,16 +55,16 @@ server.listen(app.get('port'), function(){
 
 var request = require('request')
 setInterval(function() {
-    console.log("posting", app.get('port'))
-    request.post({url:'http://localhost:'+app.get('port')+'/api/test',json:{info:'PAKDF_1_0_0:16:auth1.ripple.com:9:testpakdf:5:login:',signreq:'1db48e7b8fd93e13e02ba8ef922b2a578f3980ef82218834c37bba51fd4f1050297973835a07c54a22b9d8313b6a4371febdb13483e0eb144716cff149a8e8ab99f66f10cc6f33116051ab09ecc5a7e7c6d67134e00a02ff63f908eded64291aceea4006ce28aef94406bf08269e621c6723eba6d3caf2872cb67301582e3f36bed843daf3e5a4f2c2a207bfddf89ce7bf0713f12061f7832b269200be293446ddb4dc3076c2f8ee3d87e9b1419b1fa402da472def887d49d1b0f8e409abb0cf13f7c1e6638d4878f77b9d954617fe1c79249b779b71e7e0e021ff169172bd55fc532502d0b446114f5be2f3c425cc823adaee8dd2867f83f2d2f0dc3f43aba2'}},
+    reporter.log("authd health test:posting", app.get('port'))
+    request.post({url:'http://localhost:'+app.get('port')+'/api/test',json:{info:'PAKDF_1_0_0:22:authd-test.example.com:8:stefanth:5:login:',signreq:'ae3f16904f6e34d48cb81a306c2ccba0f5eabffd8ea98cfadc6ed5e46bb64f6fe41ce72d81943223fb33c251d455196cd01ac3f64106a7d59b29d9a64ec63ccbe935b383ddff3fa0c4546fe0173b1b31da683b72a8c13eaaa0d7eff9fb23122032433159b825f7c5016ffd1d79c5a990ac4c08e309d5e325274d79acb5c83b2d64edfa00191ba05b51daae7a38f924b4f184d6b629f3983972d3c0ab41e425cf9c80e4e4fdaf1b2a9902ad25adaaea92d1dcdec10e6aab330addc77311eea81e410fe5ea58ed82f2dbacf66001ce5db95e225d28f2ced9e09e58dc924dc31121e42374d4503ea0c62a357346fdb3e260222253e8805e5c34aa00584308a1de68'}},
     function(err,resp,body) {
-        if (resp.statusCode !== 400) {
+        if (resp.statusCode !== 200) {
             reporter.log('authd: test failure')
             reporter.log(resp.statusCode,resp.headers,body)
             process.exit()
         }
     })
-}, 2000)
+}, 60000)
 process.on('SIGTERM',function() {
     reporter.log("caught sigterm");
     process.exit();
