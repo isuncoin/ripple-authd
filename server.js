@@ -32,11 +32,13 @@ app.post('/api/sign', api.sign);
 app.post('/api/test', api.test);
 
 var server;
+var protocol = 'http';
 if (env === 'development') {
     app.set('port', config.port || 3000);
     server = http.createServer(app);
     app.use(errorhandler());
 } else if (env === 'production') {
+    protocol = 'https';
     app.set('port', config.port || 443);
     server = https.createServer({
     ca: fs.readFileSync(path.resolve(__dirname, 'ca.crt')),
@@ -55,8 +57,8 @@ server.listen(app.get('port'), function(){
 
 var request = require('request')
 setInterval(function() {
-    reporter.log("authd health test:posting", app.get('port'))
-    request.post({url:'http://localhost:'+app.get('port')+'/api/test',json:{info:'PAKDF_1_0_0:22:authd-test.example.com:8:stefanth:5:login:',signreq:'ae3f16904f6e34d48cb81a306c2ccba0f5eabffd8ea98cfadc6ed5e46bb64f6fe41ce72d81943223fb33c251d455196cd01ac3f64106a7d59b29d9a64ec63ccbe935b383ddff3fa0c4546fe0173b1b31da683b72a8c13eaaa0d7eff9fb23122032433159b825f7c5016ffd1d79c5a990ac4c08e309d5e325274d79acb5c83b2d64edfa00191ba05b51daae7a38f924b4f184d6b629f3983972d3c0ab41e425cf9c80e4e4fdaf1b2a9902ad25adaaea92d1dcdec10e6aab330addc77311eea81e410fe5ea58ed82f2dbacf66001ce5db95e225d28f2ced9e09e58dc924dc31121e42374d4503ea0c62a357346fdb3e260222253e8805e5c34aa00584308a1de68'}},
+    reporter.log("authd health test:posting", protocol, app.get('port'))
+    request.post({url:protocol+'://localhost:'+app.get('port')+'/api/test',json:{info:'PAKDF_1_0_0:22:authd-test.example.com:8:stefanth:5:login:',signreq:'ae3f16904f6e34d48cb81a306c2ccba0f5eabffd8ea98cfadc6ed5e46bb64f6fe41ce72d81943223fb33c251d455196cd01ac3f64106a7d59b29d9a64ec63ccbe935b383ddff3fa0c4546fe0173b1b31da683b72a8c13eaaa0d7eff9fb23122032433159b825f7c5016ffd1d79c5a990ac4c08e309d5e325274d79acb5c83b2d64edfa00191ba05b51daae7a38f924b4f184d6b629f3983972d3c0ab41e425cf9c80e4e4fdaf1b2a9902ad25adaaea92d1dcdec10e6aab330addc77311eea81e410fe5ea58ed82f2dbacf66001ce5db95e225d28f2ced9e09e58dc924dc31121e42374d4503ea0c62a357346fdb3e260222253e8805e5c34aa00584308a1de68'}},
     function(err,resp,body) {
         if (resp.statusCode !== 200) {
             reporter.log('authd: test failure')
