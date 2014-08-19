@@ -10,7 +10,7 @@
     "bignum": "~0.6.0",
     "body-parser": "^1.5.2",
     "cors": "^2.4.1",
-    "ddos": "^0.1.5",
+    "ddos": "",
     "errorhandler": "^1.1.1",
     "express": "^4.7.4",
     "method-override": "^2.1.2",
