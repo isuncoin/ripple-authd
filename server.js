@@ -10,12 +10,20 @@ var express = require('express')
   , http = require('http')
   , https = require('https')
   , path = require('path')
-  , config = require('./config');
+  , config = require('./config')
+  , morgan = require('morgan')
+  , log = require('./lib/log').winston;
 
 var app = express();
 
+// Overload the remote-user token which is a default part of combined
+// Pull the remote-user from the info string instead so we can track user login
+morgan.token('remote-user', function getUser(req) {
+  return req.body.info || '';
+})
+
 app.configure(function(){
-  app.use(express.logger('dev'));
+  app.use(morgan('combined', {stream: log.winstonStream}));
   app.use(express.bodyParser());
   app.use(express.methodOverride());
   app.use(app.router);
