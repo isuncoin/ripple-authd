@@ -1,0 +1,6 @@
+{
+	"domain": "authd.isuncoins.com",
+	"certUrl": "https://acme-v01.api.letsencrypt.org/acme/cert/033efbf178b6751b28b9772afb460a79ab66",
+	"certStableUrl": "",
+	"accountRef": "https://acme-v01.api.letsencrypt.org/acme/reg/6570898"
+}

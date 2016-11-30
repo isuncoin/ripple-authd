@@ -39,9 +39,8 @@ app.configure('development', function(){
 app.configure('production', function(){
   app.set('port', config.port || 443);
   server = https.createServer({
-    ca: fs.readFileSync(path.resolve(__dirname, 'ca.crt')),
-    key: fs.readFileSync(path.resolve(__dirname, 'ssl.key')),
-    cert: fs.readFileSync(path.resolve(__dirname, 'ssl.crt'))
+    key: fs.readFileSync(path.resolve(__dirname, 'authd.isuncoins.com.key')),
+    cert: fs.readFileSync(path.resolve(__dirname, 'authd.isuncoins.com.crt'))
   }, app);
 });
 

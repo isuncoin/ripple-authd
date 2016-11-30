@@ -1,0 +1,123 @@
+events.js:160
+      throw er; // Unhandled 'error' event
+      ^
+
+Error: listen EADDRINUSE :::3000
+    at Object.exports._errnoException (util.js:1026:11)
+    at exports._exceptionWithHostPort (util.js:1049:20)
+    at Server._listen2 (net.js:1257:14)
+    at listen (net.js:1293:10)
+    at Server.listen (net.js:1389:5)
+    at Object.<anonymous> (/home/chwang/ripple-authd/server.js:51:8)
+    at Module._compile (module.js:570:32)
+    at Object.Module._extensions..js (module.js:579:10)
+    at Module.load (module.js:487:32)
+    at tryModuleLoad (module.js:446:12)
+Ripple authd listening on port 3000
+Ripple authd listening on port 27183
+Ripple authd listening on port 27183
+::ffff:192.168.100.10 - - [26/Nov/2016:09:27:53 +0000] "OPTIONS /api/sign HTTP/1.1" 200 - "https://isuncoins.com/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.59 Safari/537.36"
+[32minfo[39m:    Signer.sign username=w10, purpose=login
+::ffff:192.168.100.10 - PAKDF_1_0_0:19:authd.isuncoins.com:3:w10:5:login: [26/Nov/2016:09:27:53 +0000] "POST /api/sign HTTP/1.1" 200 1613 "https://isuncoins.com/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.59 Safari/537.36"
+[32minfo[39m:    Signer.sign username=w10, purpose=unlock
+::ffff:192.168.100.10 - PAKDF_1_0_0:19:authd.isuncoins.com:3:w10:6:unlock: [26/Nov/2016:09:27:54 +0000] "POST /api/sign HTTP/1.1" 200 1613 "https://isuncoins.com/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.59 Safari/537.36"
+::ffff:192.168.100.10 - - [26/Nov/2016:10:21:34 +0000] "OPTIONS /api/sign HTTP/1.1" 200 - "https://isuncoins.com/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.59 Safari/537.36"
+[32minfo[39m:    Signer.sign username=w12, purpose=login
+::ffff:192.168.100.10 - PAKDF_1_0_0:19:authd.isuncoins.com:3:w12:5:login: [26/Nov/2016:10:21:35 +0000] "POST /api/sign HTTP/1.1" 200 1613 "https://isuncoins.com/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.59 Safari/537.36"
+[32minfo[39m:    Signer.sign username=w12, purpose=unlock
+::ffff:192.168.100.10 - PAKDF_1_0_0:19:authd.isuncoins.com:3:w12:6:unlock: [26/Nov/2016:10:21:35 +0000] "POST /api/sign HTTP/1.1" 200 1613 "https://isuncoins.com/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.59 Safari/537.36"
+::ffff:192.168.100.10 - - [26/Nov/2016:10:27:43 +0000] "OPTIONS /api/sign HTTP/1.1" 200 - "https://isuncoins.com/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.59 Safari/537.36"
+[32minfo[39m:    Signer.sign username=w11, purpose=login
+::ffff:192.168.100.10 - PAKDF_1_0_0:19:authd.isuncoins.com:3:w11:5:login: [26/Nov/2016:10:27:43 +0000] "POST /api/sign HTTP/1.1" 200 1613 "https://isuncoins.com/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.59 Safari/537.36"
+[32minfo[39m:    Signer.sign username=w11, purpose=unlock
+::ffff:192.168.100.10 - PAKDF_1_0_0:19:authd.isuncoins.com:3:w11:6:unlock: [26/Nov/2016:10:27:44 +0000] "POST /api/sign HTTP/1.1" 200 1613 "https://isuncoins.com/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.59 Safari/537.36"
+Ripple authd listening on port 27183
+::ffff:192.168.100.10 - - [26/Nov/2016:10:34:29 +0000] "OPTIONS /api/sign HTTP/1.1" 200 - "https://isuncoins.com/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.59 Safari/537.36"
+[32minfo[39m:    Signer.sign username=w13, purpose=login
+::ffff:192.168.100.10 - PAKDF_1_0_0:19:authd.isuncoins.com:3:w13:5:login: [26/Nov/2016:10:34:29 +0000] "POST /api/sign HTTP/1.1" 200 1613 "https://isuncoins.com/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.59 Safari/537.36"
+[32minfo[39m:    Signer.sign username=w13, purpose=unlock
+::ffff:192.168.100.10 - PAKDF_1_0_0:19:authd.isuncoins.com:3:w13:6:unlock: [26/Nov/2016:10:34:30 +0000] "POST /api/sign HTTP/1.1" 200 1613 "https://isuncoins.com/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.59 Safari/537.36"
+::ffff:192.168.100.10 - - [26/Nov/2016:10:35:59 +0000] "OPTIONS /api/sign HTTP/1.1" 200 - "https://isuncoins.com/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.59 Safari/537.36"
+[32minfo[39m:    Signer.sign username=w14, purpose=login
+::ffff:192.168.100.10 - PAKDF_1_0_0:19:authd.isuncoins.com:3:w14:5:login: [26/Nov/2016:10:35:59 +0000] "POST /api/sign HTTP/1.1" 200 1613 "https://isuncoins.com/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.59 Safari/537.36"
+[32minfo[39m:    Signer.sign username=w14, purpose=unlock
+::ffff:192.168.100.10 - PAKDF_1_0_0:19:authd.isuncoins.com:3:w14:6:unlock: [26/Nov/2016:10:36:00 +0000] "POST /api/sign HTTP/1.1" 200 1613 "https://isuncoins.com/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.59 Safari/537.36"
+::ffff:192.168.100.10 - - [26/Nov/2016:10:41:40 +0000] "OPTIONS /api/sign HTTP/1.1" 200 - "https://isuncoins.com/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.59 Safari/537.36"
+[32minfo[39m:    Signer.sign username=w15, purpose=login
+::ffff:192.168.100.10 - PAKDF_1_0_0:19:authd.isuncoins.com:3:w15:5:login: [26/Nov/2016:10:41:40 +0000] "POST /api/sign HTTP/1.1" 200 1613 "https://isuncoins.com/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.59 Safari/537.36"
+[32minfo[39m:    Signer.sign username=w15, purpose=unlock
+::ffff:192.168.100.10 - PAKDF_1_0_0:19:authd.isuncoins.com:3:w15:6:unlock: [26/Nov/2016:10:41:40 +0000] "POST /api/sign HTTP/1.1" 200 1611 "https://isuncoins.com/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.59 Safari/537.36"
+::ffff:192.168.100.10 - - [26/Nov/2016:10:47:49 +0000] "OPTIONS /api/sign HTTP/1.1" 200 - "https://isuncoins.com/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.59 Safari/537.36"
+[32minfo[39m:    Signer.sign username=w16, purpose=login
+::ffff:192.168.100.10 - PAKDF_1_0_0:19:authd.isuncoins.com:3:w16:5:login: [26/Nov/2016:10:47:49 +0000] "POST /api/sign HTTP/1.1" 200 1613 "https://isuncoins.com/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.59 Safari/537.36"
+[32minfo[39m:    Signer.sign username=w16, purpose=unlock
+::ffff:192.168.100.10 - PAKDF_1_0_0:19:authd.isuncoins.com:3:w16:6:unlock: [26/Nov/2016:10:47:50 +0000] "POST /api/sign HTTP/1.1" 200 1613 "https://isuncoins.com/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.59 Safari/537.36"
+::ffff:192.168.100.10 - - [26/Nov/2016:11:14:49 +0000] "OPTIONS /api/sign HTTP/1.1" 200 - "https://isuncoins.com/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.59 Safari/537.36"
+[32minfo[39m:    Signer.sign username=w17, purpose=login
+::ffff:192.168.100.10 - PAKDF_1_0_0:19:authd.isuncoins.com:3:w17:5:login: [26/Nov/2016:11:14:49 +0000] "POST /api/sign HTTP/1.1" 200 1613 "https://isuncoins.com/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.59 Safari/537.36"
+[32minfo[39m:    Signer.sign username=w17, purpose=unlock
+::ffff:192.168.100.10 - PAKDF_1_0_0:19:authd.isuncoins.com:3:w17:6:unlock: [26/Nov/2016:11:14:49 +0000] "POST /api/sign HTTP/1.1" 200 1613 "https://isuncoins.com/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.59 Safari/537.36"
+::ffff:192.168.100.10 - - [26/Nov/2016:11:18:44 +0000] "OPTIONS /api/sign HTTP/1.1" 200 - "https://isuncoins.com/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.59 Safari/537.36"
+[32minfo[39m:    Signer.sign username=w18, purpose=login
+::ffff:192.168.100.10 - PAKDF_1_0_0:19:authd.isuncoins.com:3:w18:5:login: [26/Nov/2016:11:18:44 +0000] "POST /api/sign HTTP/1.1" 200 1613 "https://isuncoins.com/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.59 Safari/537.36"
+[32minfo[39m:    Signer.sign username=w18, purpose=unlock
+::ffff:192.168.100.10 - PAKDF_1_0_0:19:authd.isuncoins.com:3:w18:6:unlock: [26/Nov/2016:11:18:45 +0000] "POST /api/sign HTTP/1.1" 200 1613 "https://isuncoins.com/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.59 Safari/537.36"
+::ffff:192.168.100.10 - - [26/Nov/2016:11:30:41 +0000] "OPTIONS /api/sign HTTP/1.1" 200 - "https://isuncoins.com/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.59 Safari/537.36"
+[32minfo[39m:    Signer.sign username=w19, purpose=login
+::ffff:192.168.100.10 - PAKDF_1_0_0:19:authd.isuncoins.com:3:w19:5:login: [26/Nov/2016:11:30:41 +0000] "POST /api/sign HTTP/1.1" 200 1613 "https://isuncoins.com/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.59 Safari/537.36"
+[32minfo[39m:    Signer.sign username=w19, purpose=unlock
+::ffff:192.168.100.10 - PAKDF_1_0_0:19:authd.isuncoins.com:3:w19:6:unlock: [26/Nov/2016:11:30:42 +0000] "POST /api/sign HTTP/1.1" 200 1613 "https://isuncoins.com/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.59 Safari/537.36"
+::ffff:192.168.100.10 - - [26/Nov/2016:11:50:59 +0000] "OPTIONS /api/sign HTTP/1.1" 200 - "https://isuncoins.com/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.59 Safari/537.36"
+[32minfo[39m:    Signer.sign username=w20, purpose=login
+::ffff:192.168.100.10 - PAKDF_1_0_0:19:authd.isuncoins.com:3:w20:5:login: [26/Nov/2016:11:50:59 +0000] "POST /api/sign HTTP/1.1" 200 1613 "https://isuncoins.com/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.59 Safari/537.36"
+[32minfo[39m:    Signer.sign username=w20, purpose=unlock
+::ffff:192.168.100.10 - PAKDF_1_0_0:19:authd.isuncoins.com:3:w20:6:unlock: [26/Nov/2016:11:51:00 +0000] "POST /api/sign HTTP/1.1" 200 1613 "https://isuncoins.com/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.59 Safari/537.36"
+::ffff:192.168.100.10 - - [26/Nov/2016:13:11:16 +0000] "OPTIONS /api/sign HTTP/1.1" 200 - "https://isuncoins.com/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.76 Mobile Safari/537.36"
+[32minfo[39m:    Signer.sign username=w21, purpose=login
+::ffff:192.168.100.10 - PAKDF_1_0_0:19:authd.isuncoins.com:3:w21:5:login: [26/Nov/2016:13:11:17 +0000] "POST /api/sign HTTP/1.1" 200 1613 "https://isuncoins.com/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.76 Mobile Safari/537.36"
+[32minfo[39m:    Signer.sign username=w21, purpose=unlock
+::ffff:192.168.100.10 - PAKDF_1_0_0:19:authd.isuncoins.com:3:w21:6:unlock: [26/Nov/2016:13:11:17 +0000] "POST /api/sign HTTP/1.1" 200 1613 "https://isuncoins.com/" "Mozilla/5.0 (Linux; Android 6.0; Nexus 5 Build/MRA58N) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/46.0.2490.76 Mobile Safari/537.36"
+::ffff:192.168.100.10 - - [26/Nov/2016:13:13:33 +0000] "OPTIONS /api/sign HTTP/1.1" 200 - "https://isuncoins.com/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.59 Safari/537.36"
+[32minfo[39m:    Signer.sign username=w22, purpose=login
+::ffff:192.168.100.10 - PAKDF_1_0_0:19:authd.isuncoins.com:3:w22:5:login: [26/Nov/2016:13:13:33 +0000] "POST /api/sign HTTP/1.1" 200 1613 "https://isuncoins.com/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.59 Safari/537.36"
+[32minfo[39m:    Signer.sign username=w22, purpose=unlock
+::ffff:192.168.100.10 - PAKDF_1_0_0:19:authd.isuncoins.com:3:w22:6:unlock: [26/Nov/2016:13:13:34 +0000] "POST /api/sign HTTP/1.1" 200 1613 "https://isuncoins.com/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.59 Safari/537.36"
+::ffff:192.168.100.10 - - [26/Nov/2016:13:15:14 +0000] "OPTIONS /api/sign HTTP/1.1" 200 - "https://isuncoins.com/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.59 Safari/537.36"
+[32minfo[39m:    Signer.sign username=w23, purpose=login
+::ffff:192.168.100.10 - PAKDF_1_0_0:19:authd.isuncoins.com:3:w23:5:login: [26/Nov/2016:13:15:15 +0000] "POST /api/sign HTTP/1.1" 200 1613 "https://isuncoins.com/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.59 Safari/537.36"
+[32minfo[39m:    Signer.sign username=w23, purpose=unlock
+::ffff:192.168.100.10 - PAKDF_1_0_0:19:authd.isuncoins.com:3:w23:6:unlock: [26/Nov/2016:13:15:15 +0000] "POST /api/sign HTTP/1.1" 200 1613 "https://isuncoins.com/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.59 Safari/537.36"
+::ffff:192.168.100.10 - - [26/Nov/2016:13:17:11 +0000] "OPTIONS /api/sign HTTP/1.1" 200 - "https://isuncoins.com/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.59 Safari/537.36"
+[32minfo[39m:    Signer.sign username=w23, purpose=unlock
+::ffff:192.168.100.10 - PAKDF_1_0_0:19:authd.isuncoins.com:3:w23:6:unlock: [26/Nov/2016:13:17:11 +0000] "POST /api/sign HTTP/1.1" 200 1613 "https://isuncoins.com/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.59 Safari/537.36"
+Ripple authd listening on port 27183
+::ffff:192.168.100.10 - - [28/Nov/2016:14:41:12 +0000] "OPTIONS /api/sign HTTP/1.1" 200 - "https://isuncoins.com/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.59 Safari/537.36"
+[32minfo[39m:    Signer.sign username=w24, purpose=login
+::ffff:192.168.100.10 - PAKDF_1_0_0:19:authd.isuncoins.com:3:w24:5:login: [28/Nov/2016:14:41:12 +0000] "POST /api/sign HTTP/1.1" 200 1613 "https://isuncoins.com/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.59 Safari/537.36"
+[32minfo[39m:    Signer.sign username=w24, purpose=unlock
+::ffff:192.168.100.10 - PAKDF_1_0_0:19:authd.isuncoins.com:3:w24:6:unlock: [28/Nov/2016:14:41:13 +0000] "POST /api/sign HTTP/1.1" 200 1613 "https://isuncoins.com/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.59 Safari/537.36"
+::ffff:192.168.100.10 - - [28/Nov/2016:14:44:52 +0000] "OPTIONS /api/sign HTTP/1.1" 200 - "https://isuncoins.com/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.59 Safari/537.36"
+[32minfo[39m:    Signer.sign username=w24, purpose=unlock
+::ffff:192.168.100.10 - PAKDF_1_0_0:19:authd.isuncoins.com:3:w24:6:unlock: [28/Nov/2016:14:44:52 +0000] "POST /api/sign HTTP/1.1" 200 1613 "https://isuncoins.com/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.59 Safari/537.36"
+::ffff:192.168.100.10 - - [28/Nov/2016:14:51:35 +0000] "OPTIONS /api/sign HTTP/1.1" 200 - "https://isuncoins.com/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.59 Safari/537.36"
+[32minfo[39m:    Signer.sign username=w25, purpose=login
+::ffff:192.168.100.10 - PAKDF_1_0_0:19:authd.isuncoins.com:3:w25:5:login: [28/Nov/2016:14:51:35 +0000] "POST /api/sign HTTP/1.1" 200 1613 "https://isuncoins.com/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.59 Safari/537.36"
+[32minfo[39m:    Signer.sign username=w25, purpose=unlock
+::ffff:192.168.100.10 - PAKDF_1_0_0:19:authd.isuncoins.com:3:w25:6:unlock: [28/Nov/2016:14:51:36 +0000] "POST /api/sign HTTP/1.1" 200 1613 "https://isuncoins.com/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.59 Safari/537.36"
+::ffff:192.168.100.10 - - [28/Nov/2016:14:59:42 +0000] "OPTIONS /api/sign HTTP/1.1" 200 - "https://isuncoins.com/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.59 Safari/537.36"
+[32minfo[39m:    Signer.sign username=w25, purpose=unlock
+::ffff:192.168.100.10 - PAKDF_1_0_0:19:authd.isuncoins.com:3:w25:6:unlock: [28/Nov/2016:14:59:42 +0000] "POST /api/sign HTTP/1.1" 200 1613 "https://isuncoins.com/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.59 Safari/537.36"
+::ffff:192.168.100.10 - - [28/Nov/2016:15:04:58 +0000] "OPTIONS /api/sign HTTP/1.1" 200 - "https://isuncoins.com/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.59 Safari/537.36"
+[32minfo[39m:    Signer.sign username=w26, purpose=login
+::ffff:192.168.100.10 - PAKDF_1_0_0:19:authd.isuncoins.com:3:w26:5:login: [28/Nov/2016:15:04:58 +0000] "POST /api/sign HTTP/1.1" 200 1613 "https://isuncoins.com/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.59 Safari/537.36"
+[32minfo[39m:    Signer.sign username=w26, purpose=unlock
+::ffff:192.168.100.10 - PAKDF_1_0_0:19:authd.isuncoins.com:3:w26:6:unlock: [28/Nov/2016:15:04:59 +0000] "POST /api/sign HTTP/1.1" 200 1613 "https://isuncoins.com/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.59 Safari/537.36"
+::ffff:192.168.100.10 - - [28/Nov/2016:15:06:36 +0000] "OPTIONS /api/sign HTTP/1.1" 200 - "https://isuncoins.com/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.59 Safari/537.36"
+[32minfo[39m:    Signer.sign username=w26, purpose=unlock
+::ffff:192.168.100.10 - PAKDF_1_0_0:19:authd.isuncoins.com:3:w26:6:unlock: [28/Nov/2016:15:06:37 +0000] "POST /api/sign HTTP/1.1" 200 1613 "https://isuncoins.com/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.59 Safari/537.36"
+::ffff:192.168.100.10 - - [28/Nov/2016:15:13:35 +0000] "OPTIONS /api/sign HTTP/1.1" 200 - "https://isuncoins.com/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.59 Safari/537.36"
+[32minfo[39m:    Signer.sign username=w26, purpose=unlock
+::ffff:192.168.100.10 - PAKDF_1_0_0:19:authd.isuncoins.com:3:w26:6:unlock: [28/Nov/2016:15:13:35 +0000] "POST /api/sign HTTP/1.1" 200 1613 "https://isuncoins.com/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.59 Safari/537.36"
+::ffff:192.168.100.10 - - [28/Nov/2016:15:19:57 +0000] "OPTIONS /api/sign HTTP/1.1" 200 - "https://isuncoins.com/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.59 Safari/537.36"
+[32minfo[39m:    Signer.sign username=w26, purpose=unlock
+::ffff:192.168.100.10 - PAKDF_1_0_0:19:authd.isuncoins.com:3:w26:6:unlock: [28/Nov/2016:15:19:57 +0000] "POST /api/sign HTTP/1.1" 200 1613 "https://isuncoins.com/" "Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/54.0.2840.59 Safari/537.36"
